@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Responsive Navigation Strip</title>
+    <link href="main.css" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <nav id="navbar">
+        <button aria-label="Toggle menu" class="menu-toggle" id="menu-toggle-icon">☰</button>
+        <ul class="nav-items" id="nav-links">
+            <li>
+                <a aria-label="Home section" class="nav-link" href="index.html">
+                    <span>🏠</span> Home
+                </a>
+            </li>
+            <li>
+                <a aria-label="About Me section" class="nav-link" href="#about">
+                    <span>👤</span> About Me
+                </a>
+            </li>
+            <li>
+                <a aria-label="My Work section" class="nav-link" href="#my-works">
+                    <span>💼</span> My Work
+                </a>
+            </li>
+            <li>
+                <a aria-label="Hobbies section" class="nav-link" href="#hobbies">
+                    <span>🎨</span> Hobbies
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="about-section" id="about">
+        <section class="about-row">
+            <section class="about-col image-container">
+                <img alt="Albert Einstein" class="einstein-image" src="images/einstein.jpg">
+            </section>
+            <section class="about-col about-text">
+                <h2>About Me</h2>
+                <p>
+                    Welcome to my website! I am Albert Einstein, a theoretical physicist known for my work in the fields
+                    of relativity and quantum mechanics. Over the course of my life, I’ve been fortunate enough to
+                    explore the wonders of the universe, developing theories that have reshaped our understanding of
+                    space, time, and energy.
+                </p>
+
+            </section>
+        </section>
+    </section>
+
+
+    <section id="my-works" class="works-section">
+        <h2>My Works</h2>
+        <section id="works-grid" class="works-container">
+            
+            <article class="paper-card">
+                <img src="images/works-image.jpg" alt="Special Relativity" class="hero-image">
+                <h3>On the Electrodynamics of Moving Bodies</h3>
+                <p>
+                    In this groundbreaking paper, Einstein introduced the special theory of relativity, which revolutionized our understanding of space and time.
+                </p>
+                <button class="read-paper" data-paper="special_relativity.pdf">Read</button>
+            </article>
+         
+            <article class="paper-card">
+                <img src="images/works-image.jpg" alt="Mass-Energy Equivalence" class="hero-image">
+                <h3>Does the Inertia of a Body Depend Upon Its Energy Content?</h3>
+                <p>
+                    This paper famously introduced the equation E=mc², which shows the relationship between mass and energy, laying the foundation for modern physics.
+                </p>
+                <button class="read-paper" data-paper="mass_energy.pdf">Read</button>
+            </article>
+        </section>
+    </section>
+
+
+ 
+    <section id="hobbies" class="hobbies-section">
+        <h2>My Hobbies</h2>
+        <section id="hobbies-grid" class="hobbies-container">
+            
+            <article class="hobby-card">
+                <h3>Playing Violin</h3>
+                <h4>Musical Expression</h4>
+                <p>
+                    Einstein had a deep love for music and often played the violin to relax and stimulate his creativity.
+                </p>
+            </article>
+            
+            <article class="hobby-card">
+                <h3>Sailing</h3>
+                <h4>Relaxing on the Water</h4>
+                <p>
+                    Sailing was one of Einstein's favorite pastimes, providing a sense of calm and an opportunity to ponder scientific questions.
+                </p>
+            </article>
+        </section>
+    </section>
+
+   
+    <footer>
+        <h2><a href="index.html" class="footer-link">Albert Einstein</a></h2>
+        <p class="footer-description">
+            "Imagination is more important than knowledge. For knowledge is limited, whereas imagination embraces the entire world, stimulating progress, giving birth to evolution."
+        </p>
+        <section class="social-icons">
+            <a href="https://www.facebook.com" class="social-link" target="_blank" aria-label="Facebook">
+                <img src="images/facebook.png" alt="Facebook Icon" class="social-icon">
+            </a>
+            <a href="https://www.whatsapp.com" class="social-link" target="_blank" aria-label="WhatsApp">
+                <img src="images/whatsapp.png" alt="WhatsApp Icon" class="social-icon">
+            </a>
+            <a href="https://www.github.com" class="social-link" target="_blank" aria-label="GitHub">
+                <img src="images/github.png" alt="GitHub Icon" class="social-icon">
+            </a>
+        </section>
+    </footer>
+
+</main>
+
+<script src="main.js"></script>
+</body>
+</html>
